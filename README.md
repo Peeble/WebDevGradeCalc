@@ -1,4 +1,4 @@
-[Image](https://i.imgur.com/IpE9Mv2.png)
+![Image](https://i.imgur.com/IpE9Mv2.png)
 
 # Super Simple Grade Calculator
 
