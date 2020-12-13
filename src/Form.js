@@ -1,6 +1,9 @@
 import React, {Component} from 'react'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
+import TextField from '@material-ui/core/TextField'
+import { withTheme } from '@material-ui/core'
+
 
 class Form extends Component {
     constructor(props) {
@@ -15,6 +18,8 @@ class Form extends Component {
             total: ''
         }
     }
+
+    
 
     handleUsernameChange = (event) => {
         this.setState({
@@ -58,25 +63,25 @@ class Form extends Component {
         return (
             <div>
             <form onSubmit={this.handleSubmit}> 
-                <div>
+                <div className="element">
                     <label>HW: </label>
-                    <input type='text'value={this.state.hw} onChange={this.handleUsernameChange}/>
+                    <TextField color="primary" type="number" variant="outlined" value={this.state.hw} onChange={this.handleUsernameChange} />
                 </div>
-                <div>
+                <div className="element">
                     <label>Exam 1: </label>
-                    <input value={this.state.exam1} onChange={this.handleExam1}></input>
+                    <TextField type="number" variant="outlined"  value={this.state.exam1} onChange={this.handleExam1} />
                 </div>
-                <div>
+                <div className="element">
                     <label>Exam 2: </label>
-                    <input value={this.state.exam2} onChange={this.handleExam2}></input>
+                    <TextField type="number" variant="outlined"  value={this.state.exam2} onChange={this.handleExam2} />
                 </div>
-                <div>
+                <div className="element">
                     <label>Group Project 1: </label>
-                    <input value={this.state.group1} onChange={this.handleProject1}></input>
+                    <TextField type="number" variant="outlined"  value={this.state.group1} onChange={this.handleProject1} />
                 </div>
-                <div>
+                <div className="element">
                     <label>Group Project 2: </label>
-                    <input value={this.state.group2} onChange={this.handleProject2}></input>
+                    <TextField type="number" variant="outlined"  value={this.state.group2} onChange={this.handleProject2} />
                 </div>
                 <Button type="submit" color="primary" variant="contained">Submit</Button>
             </form>

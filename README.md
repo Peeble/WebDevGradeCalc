@@ -1,3 +1,9 @@
+[Image](https://i.imgur.com/IpE9Mv2.png)
+
+# Super Simple Grade Calculator
+
+This is a small scale mini project. Allows the user to enter their grades for each category and applies to appropriate weights (in this case, those specific to CPSC 349 at CSUF)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
